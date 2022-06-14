@@ -42,17 +42,23 @@
 
     <!-- Zoom Js -->
     <script src="js/zoom.js"></script>
+    
+    <!-- Modal Js -->
+    <script src="js/modal.js"></script>
+
+    <!-- Swipe events -->
+    <script src="js/swiped-events.min.js"></script>
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P5D73QFBZ"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P5D73QFBZ"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-4P5D73QFBZ');
-    </script>
+    </script> -->
 
   </head>
   <body class="w3-black">
@@ -115,19 +121,25 @@
         <!-- Grid for photos -->
         <div class="w3-row-padding" style="margin:0 -16px">
           <div class="w3-half">
-            <img src="images/posters/poster1.png" class="image" data-action="zoom">
-            <img src="images/posters/poster2.png" class="image" data-action="zoom">
-            <img src="images/posters/poster3.png" class="image" data-action="zoom">
-            <img src="images/posters/poster4.png" class="image" data-action="zoom">
-            <img src="images/posters/poster5.png" class="image" data-action="zoom">
+            <img src="images/posters/poster1.png" class="image hover-shadow" onclick="var images=['images/posters/poster1.png', 'images/poster_showcase/p1_1.jpg', 'images/poster_showcase/p1_2.png'];openLightbox(images)">
+            <img src="images/posters/poster2.png" class="image hover-shadow" onclick="var images=['images/posters/poster2.png', 'images/poster_showcase/p2_1.jpg'];openLightbox(images)">
+            <img src="images/posters/poster3.png" class="image hover-shadow" onclick="var images=['images/posters/poster3.png', 'images/poster_showcase/p3_1.jpg', 'images/poster_showcase/p3_2.jpg', 'images/poster_showcase/p3_3.jpg', 'images/poster_showcase/p3_4.jpg', 'images/poster_showcase/p3_5.jpg'];openLightbox(images)">
+            <img src="images/posters/poster4.png" class="image hover-shadow" onclick="var images=['images/posters/poster4.png', 'images/poster_showcase/p4_1.jpg', 'images/poster_showcase/p4_2.jpg', 'images/poster_showcase/p4_3.jpg', 'images/poster_showcase/p4_4.jpg', 'images/poster_showcase/p4_5.jpg', 'images/poster_showcase/p4_6.jpg', 'images/poster_showcase/p4_7.jpg', 'images/poster_showcase/p4_8.jpg'];openLightbox(images)">
+            <img src="images/posters/poster5.png" class="image hover-shadow" onclick="var images=['images/posters/poster5.png', 'images/poster_showcase/p5_1.jpg', 'images/poster_showcase/p5_2.jpg', 'images/poster_showcase/p5_3.jpg', 'images/poster_showcase/p5_4.jpg'];openLightbox(images)">
+            <img src="images/posters/poster6.png" class="image hover-shadow" onclick="var images=['images/posters/poster6.png', 'images/poster_showcase/p6_1.jpg', 'images/poster_showcase/p6_2.jpg', 'images/poster_showcase/p6_3.jpg'];openLightbox(images)">
+            <img src="images/posters/poster7.png" class="image hover-shadow" onclick="var images=['images/posters/poster7.png', 'images/poster_showcase/p7_1.jpg', 'images/poster_showcase/p7_2.jpg', 'images/poster_showcase/p7_3.jpg', 'images/poster_showcase/p7_4.jpg', 'images/poster_showcase/p7_5.jpg'];openLightbox(images)">
+            <img src="images/posters/poster8.png" class="image hover-shadow" onclick="var images=['images/posters/poster8.png', 'images/poster_showcase/p8_1.jpg', 'images/poster_showcase/p8_2.jpg', 'images/poster_showcase/p8_3.jpg', 'images/poster_showcase/p8_4.jpg', 'images/poster_showcase/p8_5.jpg'];openLightbox(images)">
           </div>
 
           <div class="w3-half">
-            <img src="images/posters/poster6.png" class="image" data-action="zoom">
-            <img src="images/posters/poster7.png" class="image" data-action="zoom">
-            <img src="images/posters/poster8.png" class="image" data-action="zoom">
             <img src="images/posters/poster9.png" class="image" data-action="zoom">
-            <img src="images/posters/poster10.png" class="image" data-action="zoom">
+            <img src="images/posters/poster10.png" class="image hover-shadow" onclick="var images=['images/posters/poster10.png', 'images/poster_showcase/p10_1.jpg', 'images/poster_showcase/p10_2.jpg', 'images/poster_showcase/p10_3.jpg', 'images/poster_showcase/p10_4.jpg', 'images/poster_showcase/p10_5.png', 'images/poster_showcase/p10_6.jpg', 'images/poster_showcase/p10_7.jpg', 'images/poster_showcase/p10_8.jpg'];openLightbox(images)">
+            <img src="images/posters/poster11.png" class="image hover-shadow" onclick="var images=['images/posters/poster11.png', 'images/poster_showcase/p11_1.jpg', 'images/poster_showcase/p11_2.jpg'];openLightbox(images)">
+            <img src="images/posters/poster12.png" class="image" data-action="zoom">
+            <img src="images/posters/poster13.png" class="image hover-shadow" onclick="var images=['images/posters/poster13.png', 'images/poster_showcase/p13_1.jpg', 'images/poster_showcase/p13_2.jpg', 'images/poster_showcase/p13_3.jpg'];openLightbox(images)">
+            <img src="images/posters/poster14.png" class="image hover-shadow" onclick="var images=['images/posters/poster14.png', 'images/poster_showcase/p14_1.jpg', 'images/poster_showcase/p14_2.jpg'];openLightbox(images)">
+            <img src="images/posters/poster15.png" class="image" data-action="zoom">
+            <img src="images/posters/poster16.png" class="image" data-action="zoom">
           </div>
         <!-- End photo grid -->
         </div>
@@ -172,7 +184,7 @@
           </div>
           
           <div class="w3-half">
-            <img src="images/hourglass/hourglass_v2.png" class="image" data-action="zoom">
+            <img src="images/hourglass/hourglass_v2.png" class="image hover-shadow" onclick="var images=['images/hourglass/hourglass_v2.png', 'images/poster_showcase/klepsydra_v2_1.jpg', 'images/poster_showcase/klepsydra_v2_2.jpg', 'images/poster_showcase/klepsydra_v2_3.jpg', 'images/poster_showcase/klepsydra_v2_4.jpg'];openLightbox(images)">
           </div>
         <!-- End photo grid -->
         </div>
@@ -195,6 +207,15 @@
       </div>
 
     <!-- END PAGE CONTENT -->
+    </div>
+
+
+    <div id="Lightbox" class="modal">
+      <div id="LightboxContent" class="modal-content"></div>
+
+      <span class="close pointer" onclick="closeLightbox()">&times;</span>
+      <span class="previous" onclick="changeSlide(-1)">&#10094;</span>
+      <span class="next" onclick="changeSlide(1)">&#10095;</span>
     </div>
 
   </body>
