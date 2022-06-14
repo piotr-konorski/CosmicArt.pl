@@ -14,7 +14,7 @@ function openLightbox(images) {
         divSlide.appendChild(imgElem);
         modalContent.appendChild(divSlide);
 
-        imgElem.onclick = function() { closeLightbox(); };
+        // imgElem.onclick = function() { closeLightbox(); };  // click on zoomed image to close it
     }
 
     document.getElementById('Lightbox').style.display = 'block';
